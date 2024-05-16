@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pass IT Driving School</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, .footer {
+            background-color: #024e76;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #005a87;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .contact-form {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .contact-info {
+            flex: 1;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #005a87;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #004766;
+        }
+        .footer {
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us - Pass IT Driving School</h1>
+    </header>
+    <nav>
+        <a href="./home.html">Home</a>
+        <a href="./login.html">Login</a>
+        <a href="./register.html">Register</a>
+        <a href="./courses.html">Courses</a>
+        <a href="./contact.html">Contact Us</a>
+    </nav>
+    <div class="content">
+        <div class="contact-form">
+            <h2>Send us a message</h2>
+            <form >
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Our Location</h2>
+            <p>123 Driving Lane<br>Education City, EC 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@passitdrivingschool.com</p>
+            <h3>Visit us:</h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.5029668368!2d-118.69192054110528!3d34.02073025294455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb7636e30877%3A0x7157b44afb85ad07!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1594851309789" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        Pass IT Driving School © 2024
+    </footer>
+</body>
+</html>

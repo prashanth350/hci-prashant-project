@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged Out - Pass IT Driving School</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .logout-message {
+            text-align: center;
+        }
+        header, .footer {
+            background-color: #024e76;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pass IT Driving School</h1>
+    </header>
+    <div class="logout-message">
+        <h2>You have been successfully logged out.</h2>
+        <p>You will be redirected to the homepage shortly...</p>
+    </div>
+    <footer class="footer">
+        Pass IT Driving School © 2024
+    </footer>
+    <script>
+        setTimeout(function() {
+            window.location.href = 'home.html';
+        }, 3000); // Redirect after 3000 milliseconds (3 seconds)
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Pass IT Driving School</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, .footer {
+            background-color: #024e76;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #005a87;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .booking-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #005a87;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #004766;
+        }
+        .footer {
+            background-color: #024e76;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Booking - Pass IT Driving School</h1>
+    </header>
+    <nav>
+        <a href="./profile.html">Home</a>
+        <a href="./pcourses.html">Courses</a>
+        <a href="./booking.html">Booking</a>
+        <a href="./logout.html">Logout</a>
+    </nav>
+    <div class="content">
+        <div class="booking-form">
+            <form>
+                <label for="lesson-type">Lesson Type:</label>
+                <select id="lesson-type" name="lesson_type">
+                    <option value="introductory">Introductory</option>
+                    <option value="standard">Standard</option>
+                    <option value="pass_plus">Pass Plus</option>
+                    <option value="test_prep">Test Preparation</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="instructor">Instructor:</label>
+                <select id="instructor" name="instructor">
+                    <option value="">Select Instructor</option>
+                    <option value="instructor1">Instructor 1</option>
+                    <option value="instructor2">Instructor 2</option>
+                    <option value="instructor3">Instructor 3</option>
+                </select>
+
+                <button type="submit">Book Lesson</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        Pass IT Driving School © 2024
+    </footer>
+</body>
+</html>
